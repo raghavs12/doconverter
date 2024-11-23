@@ -21,7 +21,7 @@ This application has been containerized using Docker, deployed on Kubernetes, an
 4. **Hosted Endpoint**:
    - The application is publicly accessible via the following URL:
      ```
-     https://b929-152-59-83-79.ngrok-free.app
+     https://3ca3-2409-40d1-15-e94-15ff-7bab-9ab7-f696.ngrok-free.app/
      ```
 5. **Dockerized Application**:
    - The app is containerized for easy deployment and scalability.
