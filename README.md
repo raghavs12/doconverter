@@ -163,5 +163,3 @@ The Docker image for this project is hosted at:
 This project was developed as part of the RapidFort Campus Recruitment Drive. Special thanks to the organizers for providing this opportunity.
 
 ---
-
-Let me know if you need further edits or additions!
