@@ -30,7 +30,8 @@ async function convertDocxToPdf(file, enableEncryption, userPassword, ownerPassw
 
 function encryptPdfWithQpdf(inputPath, userPassword, ownerPassword) {
   const outputPath = inputPath.replace('.pdf', '_protected.pdf');
-  const command = `qpdf --encrypt --user-password="${userPassword}" --owner-password="${ownerPassword}" --bits=256 -- ${inputPath} ${outputPath}`;
+  const command = `qpdf --encrypt ${userPassword} ${ownerPassword} 256 -- ${inputPath} ${outputPath}`;
+
 
   try {
     console.log('Running QPDF Command:', command);
