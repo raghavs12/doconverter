@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory in the container
 WORKDIR /app
 
+RUN chmod -R 755 /app
 
 
 
