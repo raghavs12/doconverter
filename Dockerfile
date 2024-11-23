@@ -1,8 +1,17 @@
 # Use Node.js as the base image
 FROM node:18
 
-# Install LibreOffice
-RUN apt-get update && apt-get install -y libreoffice && apt-get clean
+# Install LibreOffice and clean up
+RUN apt-get update && apt-get install -y \
+    libreoffice && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install qpdf and clean up
+RUN apt-get update && apt-get install -y \
+    qpdf && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set the working directory in the container
 WORKDIR /app
