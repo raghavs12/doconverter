@@ -96,7 +96,7 @@ This application has been containerized using Docker, deployed on Kubernetes, an
 ### **Hosted Endpoint**
 The application is accessible publicly at:
 ```
-https://b929-152-59-83-79.ngrok-free.app
+https://3ca3-2409-40d1-15-e94-15ff-7bab-9ab7-f696.ngrok-free.app/
 ```
 
 ---
