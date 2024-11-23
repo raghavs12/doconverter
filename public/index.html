@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOConverter</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Taskbar -->
+    <nav class="taskbar">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Doconverter Logo" class="logo">
+            <h1 class="parkinsans">DOConverter</h1>
+        </div>
+        <div class="nav-links">
+            <button id="darkModeToggle" class="btn btn-primary">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <header>
+            <h2 class="parkinsans">From Word to PDF, Seamlessly in Seconds!</h2>
+        </header>
+        <main>
+            <div class="upload-section">
+                <h3 class="playfair-display-bold">Convert Your Document Now</h3>
+                <div class="file-upload">
+                    <label for="fileInput" class="btn btn-primary">
+                        📂 Choose File(s)
+                    </label>
+                    <input type="file" id="fileInput" accept=".doc,.docx" multiple>
+                    <span id="fileName">No file chosen</span>
+                </div>
+                <div class="encryption-section" style="margin-bottom: 20px;">
+                    <label class="playfair-display-bold">
+                        <input type="checkbox" id="enableEncryption"> Enable Password Protection
+                    </label>
+                    <div id="passwordInputs" style="display: none; margin-top: 10px;">
+                        <div class="password-section" style="display: flex; gap: 20px; justify-content: center; margin-top: 10px;">
+                            <div class="password-group" style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="userPassword" class="playfair-display-regular">User Password:</label>
+                                <input type="password" id="userPassword" placeholder="Enter user password">
+                            </div>
+                            <div class="password-group" style="display: flex; flex-direction: column; align-items: flex-start;">
+                                <label for="ownerPassword" class="playfair-display-regular">Owner Password:</label>
+                                <input type="password" id="ownerPassword" placeholder="Enter owner password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="convertBtn" class="btn btn-primary">🚀 Convert</button>
+            </div>
+            <div id="progressSection" class="hidden playfair-display-bold">
+                <p>Conversion in progress...</p>
+            </div>
+            <div id="metadataSection" style="display: none;">
+                <h3 class="playfair-display-bold">Metadata:</h3>
+                <ul id="metadataList"></ul>
+                <div class="checkbox-container"></div>
+            </div>
+            <div id="downloadSection" style="display: none;">
+                <button id="downloadBtn" class="btn btn-primary">Download PDF</button>
+            </div>
+            <div id="mergeSection" style="display: none;">
+                <button id="mergeBtn" class="btn btn-primary">🔗 Merge Selected PDFs</button>
+            </div>
+            <div id="pdfViewer" style="display: none;">
+                <h3 class="playfair-display-bold">Converted PDF:</h3>
+                <iframe id="pdfFrame"></iframe>
+            </div>
+        </main>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features-section" class="features">
+        <h2 class="parkinsans">Features</h2>
+        <ul class="feature-list">
+            <li>
+                <h3 class="playfair-display-medium">🔒 Convert Word to PDF with Password Encryption</h3>
+                <p class="playfair-display-regular">
+                    Ensure your PDF files are secure with user and owner password protection, making your documents private and tamper-proof.
+                </p>
+            </li>
+            <li>
+                <h3 class="playfair-display-medium">📂 Upload Multiple Word Files</h3>
+                <p class="playfair-display-regular">
+                    Save time by uploading and converting multiple Word files to PDFs in one go with just a few clicks.
+                </p>
+            </li>
+            <li>
+                <h3 class="playfair-display-medium">🔗 Merge Multiple PDFs</h3>
+                <p class="playfair-display-regular">
+                    Combine multiple PDFs into a single file effortlessly, simplifying document management.
+                </p>
+            </li>
+            <li>
+                <h3 class="playfair-display-medium">🌗 Dark Mode/Light Mode</h3>
+                <p class="playfair-display-regular">
+                    Switch between Dark and Light modes for a comfortable viewing experience, day or night.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="about">
+        <h2 class="parkinsans">About DOConverter</h2>
+        <p class="playfair-display-regular">
+            DOConverter is your one-stop solution for seamless document conversion. 
+            With a user-friendly interface, advanced features, and lightning-fast speed, 
+            it simplifies your workflow and helps you achieve more.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin-bottom: 20px;">&copy; 2024 Doconverter. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
