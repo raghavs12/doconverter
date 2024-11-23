@@ -5,7 +5,7 @@ const upload = require('./uploadService');
 const { convertDocxToPdf } = require('./conversionService');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
