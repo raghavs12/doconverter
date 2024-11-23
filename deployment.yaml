@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: doconverter-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: doconverter
+  template:
+    metadata:
+      labels:
+        app: doconverter
+    spec:
+      containers:
+      - name: doconverter
+        image: raghavs12/doconverter:latest
+        ports:
+        - containerPort: 5000
+      imagePullSecrets:
+      - name: regcred
