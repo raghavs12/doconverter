@@ -145,6 +145,8 @@ Combine multiple PDFs into a single file effortlessly, simplifying document mana
 
 🌗 Dark Mode/Light Mode
 Switch between Dark and Light modes for a comfortable viewing experience, day or night.
+
+
 ---
 
 ## **DockerHub Repository**
