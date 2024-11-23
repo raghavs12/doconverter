@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: doconverter
+    env: docker
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
