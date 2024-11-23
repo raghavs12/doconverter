@@ -134,11 +134,17 @@ https://b929-152-59-83-79.ngrok-free.app
 ---
 
 ## **Enhancements**
-1. **Password Protection for PDFs** (Pending):
-   - Add functionality for users to set a password for the PDF.
-2. **Microservice Architecture** (Pending):
-   - Refactor the app into microservices for better scalability.
+🔒 Convert Word to PDF with Password Encryption
+Ensure your PDF files are secure with user and owner password protection, making your documents private and tamper-proof.
 
+📂 Upload Multiple Word Files
+Save time by uploading and converting multiple Word files to PDFs in one go with just a few clicks.
+
+🔗 Merge Multiple PDFs
+Combine multiple PDFs into a single file effortlessly, simplifying document management.
+
+🌗 Dark Mode/Light Mode
+Switch between Dark and Light modes for a comfortable viewing experience, day or night.
 ---
 
 ## **DockerHub Repository**
