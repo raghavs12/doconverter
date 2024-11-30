@@ -8,7 +8,7 @@ Doconverter is a web application that allows users to:
 2. View metadata of the uploaded document.
 3. Convert the `.docx` file into a `.pdf` format and download it.
 
-This application has been containerized using Docker, deployed on Kubernetes, and exposed via a public URL for testing purposes.
+This application has been containerized using Docker, and exposed via a public URL for testing purposes.
 
 ---
 
@@ -26,8 +26,7 @@ This application has been containerized using Docker, deployed on Kubernetes, an
      ```
 5. **Dockerized Application**:
    - The app is containerized for easy deployment and scalability.
-6. **Kubernetes Deployment**:
-   - The application is deployed using Kubernetes manifest files.
+
 
 ---
 
@@ -36,8 +35,7 @@ This application has been containerized using Docker, deployed on Kubernetes, an
 2. **Frontend**: HTML, CSS, JavaScript
 3. **Containerization**: Docker
 4. **CI/CD**: GitHub Actions
-5. **Orchestration**: Kubernetes
-6. **Hosting**: Exposed using `ngrok`
+
 
 ---
 
